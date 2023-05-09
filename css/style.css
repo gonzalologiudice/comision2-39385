@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter !important ;
+    color: #1f2937 ;
+}
+
+a {
+    text-decoration: none !important;
+    color: #1f2937 !important;
+}
+
+.container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 32px;
+}
+
+header {
+    background: #F6F6F6;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.08);
+}
+
+header .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+header .title {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+header .nav {
+    font-size: 18px;
+    font-weight: 500;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main .containers {
+    margin: 15px;
+}
+
+
+
+#slider {
+    height: 400px;
+    color: white;
+    background-color: #1f2937;
+    display: flex;
+    align-items: center;
+}
+
+#slider h1 {
+    font-size: 48px;
+    margin-bottom: 22px;
+}
+
+#slider p {
+    font-size: 22px;
+    margin-bottom: 32px;
+}
+
+
+.title {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f6;
+    font-size: 26px;
+    font-weight: 300px !important;
+
+    
+}
+
+#services .container {
+    display: grid;
+    grid-template-rows: minmax(100px, auto);
+    grid-area: center;
+    gap: 100px;
+} 
+
+#services .service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 48px 0;
+}
+
+ #services .service p {
+    margin-top: 16px;
+}
+
+#services .service h2 {
+    margin-bottom: 10px;
+}
+
+#services .service a {
+    margin-top: 32px;
+}
+#services .service img {
+   float: left; 
+} 
+
+
+.button {
+    display: inline-block;
+    color: white !important;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #22c55e;
+    padding: 8px 16px;
+    border-radius: 99999px;
+}
+
+footer {
+    
+    color: white;
+    background-color: #1f2937;
+    padding: 32px 0;
+}
+
+footer h1 {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 16px;
+    color: #e5e7eb;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+footer .contact {
+    display: flex; 
+    flex-direction: column;
+    
+}
+
+footer li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+
+@media (min-width: 1023px) {
+    header .container {
+        flex-direction: row;
+        align-items: center;
+        height: 64px;
+    }
+
+    header .nav {
+        flex-direction: row;
+    }
+
+    header .nav a:not(:first-child) {
+        margin-left: 12px;
+    }
+
+    #services .service {
+        flex-direction: row;
+    }
+
+    #services .service img {
+        padding-right: 32px;
+        max-width: 440px;
+    }
+
+    footer .contact {
+        flex-direction: row;
+    }
+
+    footer .contact ul:is(:last-child)  {
+        margin-left: 126px;
+    }   
+}
