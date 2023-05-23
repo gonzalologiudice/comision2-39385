@@ -1,8 +1,19 @@
 {
-	"scripts": {
-		"dev": "vite dev"
-	},
-	"dependencies": {
-		"vite": "^4.3.5"
-	}
+  "scripts": {
+    "dev": "vite dev"
+  },
+  "dependencies": {
+    "vite": "^4.3.5"
+  },
+  "name": "comision-39385",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "sass": "^1.62.1"
+  }
 }
